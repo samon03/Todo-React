@@ -6,16 +6,14 @@ const List = (props) => {
         <section className="ingredient-list">
             <h2>Todo List</h2>
             <ul>
-                <li>
-                    <span>Apple</span>
-                    <span>
-                        <button>x</button>
-                    </span>
-                </li>
-                <li>
-                    <span>Apple</span>
-                    <button>x</button>
-                </li>
+                {props.todos.map(todo => (
+                    <li key={todo.id}>
+                        <span>{todo.todo}</span>
+                        <span>
+                            <button onClick={props.onRemove.bind(this, todo.id)}>x</button>
+                        </span>
+                    </li>
+                ))}
             </ul>
         </section>
     );
