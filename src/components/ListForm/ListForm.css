@@ -1,0 +1,57 @@
+.ingredient-form {
+    width: 26rem;
+    max-width: 80%;
+    margin: auto;
+  }
+  
+  .form-control input {
+    display: block;
+    width: 100%;
+  }
+  
+  .form-control input {
+    font: inherit;
+    padding: 0.1rem 0.25rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 1rem;
+    background-color: #282c34;
+    color: white;
+  }
+  
+  .form-control input:focus {
+    outline: none;
+    border-bottom-color: rgb(59, 135, 221);
+  }
+  
+  .ingredient-form__actions {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+  }
+
+  button {
+    font-size: 16px;
+    background: rgb(59, 135, 221);
+    padding: 0.2rem 1rem;
+    color: white;
+    border: 1px solid rgb(59, 135, 221);
+    margin: 0.2rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover,
+  button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+
+  .card {
+    margin: 1rem 0;
+    padding: 1rem;
+    box-shadow: 0 1px 4px rgba(255, 251, 251, 0.26);
+  }
