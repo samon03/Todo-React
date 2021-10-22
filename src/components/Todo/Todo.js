@@ -2,9 +2,8 @@ import React, { useState, useEffect, useCallback } from 'react';
 
 import ListForm from '../ListForm/ListForm';
 import List from '../List/List';
-import axios from 'axios';
 
-const Todo = (props) => {
+const Todo = (props, params) => {
 
     const [todoList, setTodoList] = useState([]);
 
@@ -20,6 +19,8 @@ const Todo = (props) => {
                 ...prevTodo,
                 {id: responseData.name, ...todoData}
             ]);
+        }).then(() => {
+        
         });
     }
 

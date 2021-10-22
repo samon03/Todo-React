@@ -8,6 +8,7 @@ const ListForm = props => {
   const submitHandler = (event) => {
      event.preventDefault();
      props.addTodo({todo: todoValue});
+     setTodoValue('');
   }
 
     return (
